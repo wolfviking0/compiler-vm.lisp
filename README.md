@@ -38,7 +38,7 @@ Launch VM lisp :
 
 [4]> (apply_vm 'test '((MOVE ($ 5) R0) (PUSH R0) (MOVE ($ 1) R0) (PUSH R0) (INCR R0) (MOVE FP R1) (MOVE SP FP)
  (MOVE SP R2) (SUB R0 R2) (PUSH R2) (PUSH R1) (JSR (@ FIBO5)) (POP R1) (POP R2) (MOVE R1 FP)
- (MOVE R2 SP) (HALT)) 1) // Call (fibo5 5) in debug steb by step (press enter)
+ (MOVE R2 SP) (HALT)) 1) // Call (fibo5 5) in debug step by step (press enter)
  
 [5]> (apply_vm 'test '((MOVE ($ 5) R0) (PUSH R0) (MOVE ($ 1) R0) (PUSH R0) (INCR R0) (MOVE FP R1) (MOVE SP FP)
  (MOVE SP R2) (SUB R0 R2) (PUSH R2) (PUSH R1) (JSR (@ FIBO5)) (POP R1) (POP R2) (MOVE R1 FP)
